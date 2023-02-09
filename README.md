@@ -5,24 +5,16 @@
 
 ## Installation (for development)
 
-In a virtual environment:
-
-```
-git clone git@github.com:ansible/ansible-risk-insight.git
-cd ansible-risk-insight
-pip install -e .
-```
-
 ## How to try
 
 ### Role
 ```
-ansible-risk-insight role <role_name>
+tox -e ari ansible-risk-insight role <role_name>
 ```
 
 ### Collection (now fixing an issue)
 ```
-ansible-risk-insight collection <collection_name>
+tox -e ari collection <collection_name>
 ```
 
 All intermediate files are installed under a temporary directory.
